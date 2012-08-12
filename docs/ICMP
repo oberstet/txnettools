@@ -1,0 +1,22 @@
+ ICMP messages are sent using the basic IP header.  The first octet of the data
+ portion of the datagram is a ICMP type field; the value of this field
+ determines the format of the remaining data.
+
+Unless otherwise noted under the individual format descriptions, the values of
+the internet header fields are as follows:
+    * Version: 4
+    * IHL: Internet header length in 32-bit words
+    * Type of Service: 0
+    * Total length: length of internet header and data in octets
+    * Identification, flags, fragment offset: used in fragmentation
+    * TTL: time to live in seconds
+    * Protocol: ICMP = 1
+    * Header checksum: The 16 bit one's complement of the one's complement sum
+            of all 16 bit words in the header. For computing the checksum, the
+            checksum field should be zero.
+    * Source address: address of the gateway or host that composes the ICMP
+            message. Unless otherwise noted, this can be any of a gateway's
+            addresses.
+    * Destination address: The address of the gateway or host to which the
+            message should be sent.
+

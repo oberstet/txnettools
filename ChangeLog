@@ -1,0 +1,8 @@
+2009.12.05
+
+* Added interfaces, custom reactor, and util modules.
+* Added a ping prototype to the sandbox.
+* Added an ICMP packet class that wraps impacket ICMP code and update the ICMP
+datagram class to use it.
+* Added a port class for use by the custom reactor (the listenICMP method).
+* Added ChangeLog and TODO.

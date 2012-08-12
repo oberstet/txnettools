@@ -1,0 +1,7 @@
+* add a bin dir and start putting scripts there (e.g., ping, traceroute)
+* add an admin dir with dev scripts
+* add setup.py, txnet.meta
+* add testing infrastructure
+* start adding unit tests
+* keep track of ping sequences and packets sent/lost
+* time pings send/return for latency calculations
